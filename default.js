@@ -1,9 +1,15 @@
-﻿$(document).ready(function () {
+﻿$(document).ready(function() {
   // Initialize validation on the entire ASP.NET form.
   $("#form1").validate({
     // This prevents validation from running on every
     //  form submission by default.
-    onsubmit: false
+    onsubmit: false,
+    // You can also mix in more complex validation rules:
+    rules: {
+      Zip: {
+        minlength: 5
+      }
+    }
   });
 
   // Search for controls marked with the causesValidation flag 
@@ -13,7 +19,7 @@
 
   // Select any input[type=text] elements within a validation group
   //  and attach keydown handlers to all of them.
-  $('.validationGroup :text').keydown(function (evt) {
+  $('.validationGroup :text').keydown(function(evt) {
     // Only execute validation if the key pressed was enter.
     if (evt.keyCode == 13) {
       // Find and store the next input element that comes after the
