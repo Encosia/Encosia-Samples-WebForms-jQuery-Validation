@@ -29,8 +29,8 @@ label {
   margin-top: 10px;
   padding-right: 10px;
   text-align: right;
+  width: 100px;
   vertical-align: middle;
-  width: 125px;
 }
 
 label.error {
