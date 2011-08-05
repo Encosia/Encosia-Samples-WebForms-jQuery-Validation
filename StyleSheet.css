@@ -1,0 +1,52 @@
+﻿body {
+  font-family: Verdana, Arial, Sans-Serif;
+  font-size: 12px;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 470px;
+  margin-top: 10px;
+}
+
+table th {
+  font-weight: bold;
+  text-align: left;
+}
+
+label {
+  clear: both;
+  float: left;
+  line-height: 24px;
+  margin-top: 10px;
+  padding-right: 10px;
+  text-align: right;
+  vertical-align: middle;
+  width: 125px;
+}
+
+label.error {
+  clear: none;
+  color: Red;
+  float: left;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+input {
+  float: left;
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  clear: both;
+  margin: 10px 0 10px 135px;
+}
